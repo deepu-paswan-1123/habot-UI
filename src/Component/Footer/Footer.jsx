@@ -1,6 +1,9 @@
 import React from 'react';
 import habotimage from '../../assets/Images/Group 4.jpg'
 import { IoLogoInstagram } from "react-icons/io5";
+import { RiFacebookLine } from "react-icons/ri";
+import { FaTwitter } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 import '../Css/Footer.css'
 
 const Footer = () => {
@@ -40,16 +43,16 @@ const Footer = () => {
                 </div>
                 <div className="footer-right">
                     <div className="footer-icon">
-                        <IoLogoInstagram />
+                        <FaTwitter />
+                    </div>
+                    <div className="footer-icon">
+                        <RiFacebookLine />
                     </div>
                     <div className="footer-icon">
                         <IoLogoInstagram />
                     </div>
                     <div className="footer-icon">
-                        <IoLogoInstagram />
-                    </div>
-                    <div className="footer-icon">
-                        <IoLogoInstagram />
+                        <FaWhatsapp />
                     </div>
                 </div>
             </div>
