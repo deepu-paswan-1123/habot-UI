@@ -1,0 +1,110 @@
+.sectiontwo_container{
+    display: flex;
+    justify-content: space-between;  
+    padding: 50px;
+}
+.sectiontwo_leftcontainer{
+    max-width:600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sectiontwo_leftcontainer p{
+    font-size: 14px;
+}
+
+.sectiontwo_rightcontaienr{
+    width: fit-content !important;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.sectiontwo_rightcontaienr button{
+    width: 200px;
+    border: 1px solid rgba(231,118,13,1);
+    color: rgba(231,118,13,1);
+    position: relative;
+    transition: all .4s linear;
+    z-index: 1;
+}
+
+.sectiontwo_rightcontaienr button::before{
+    content: ' ';
+    height:70px !important;
+    width: inherit;
+    background: rgba(231,118,13,1);
+    position: absolute;
+    transition: all .4s linear;
+    top:100%;
+    left: 0;
+    z-index: -1;
+}
+
+.sectiontwo_rightcontaienr button:hover::before{
+    top: 0;
+}
+
+.sectiontwo_rightcontaienr button:hover{
+    color: white;
+}
+
+.sectiontwo_leftcontainer button{
+    width: 300px;
+    position: relative;
+    background-color: rgba(0, 115, 47, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s linear;
+    
+}
+.arrow-icon{
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.sectiontwo_leftcontainer button:hover{
+    background-color: #fff;
+    color: rgba(0, 115, 47, 1);
+}
+
+
+
+@media(max-width:310px){
+    .sectiontwo_leftcontainer button{
+        width: 200px;
+    }
+}
+
+@media(max-width:210px){
+    .sectiontwo_leftcontainer button{
+        width: 150px;
+    }
+    .sectiontwo_rightcontaienr button{
+        width: 150px;
+    }
+}
+
+@media(max-width:1100px){
+    .sectiontwo_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .sectiontwo_rightcontaienr{
+        justify-content: center;
+    }
+}
+
+
+@media(max-width:720px){
+    .sectiontwo_rightcontaienr{
+        justify-content: center;
+    }
+}

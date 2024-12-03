@@ -1,0 +1,66 @@
+.sectionive-outer-container{
+    padding: 50px;
+}
+
+.sectionfive-inner-contianer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sectionfive-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sectionfive-inner-contianer h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.sectionfive-inner-contianer p{
+    text-align: center;
+}
+
+.sectionfive-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionfive-box{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.odd{
+    background-color: rgba(232,251,255,1);
+
+}
+.even{
+    background-color: rgb(255, 251, 251);
+}
+
+.odd:hover{
+    /* background-color: rgba(231,118,17,1); */
+    background-color: rgba(0, 115, 47, 1);
+    color: white;
+}
+.even:hover{
+    background-color: rgba(231,118,17,1);
+    color: white;
+}
+
+
